@@ -4,14 +4,9 @@ Created on Fri Mar 15 12:26:17 2019
 
 @author: g704874
 """
-
-# Set working directory
-import os
-import pandas as pd
 import numpy as np
-os.getcwd()
-os.chdir("C:/IMARTICUS Learning/PythonLearning/SVM_CreditRisk_UseCase")
-os.getcwd()
+import pandas as pd
+import os
 
 ####IMPORTING TRAINING AND TEST DATA SETS ######
 TrainData = pd.read_csv("R_Module_Day_7.2_Credit_Risk_Train_data.csv")
@@ -158,20 +153,3 @@ Model_Validation_Df = pd.DataFrame({'Cost': mycost_List,
                                     'Gamma': mygamma_List, 
                                     'Kernel': mykernel_List, 
                                     'Accuracy': accuracy_List})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
